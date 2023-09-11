@@ -1,0 +1,227 @@
+.how-section {
+    margin-top: 50px;
+    position: relative;
+    height: auto;
+}
+
+.heading {
+    font-size: 42px;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.heading:after {
+    display: block;
+    width: 5%;
+    background-color: rgba(255, 210, 0, 1);
+    height: 8px;
+    content: "";
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px
+}
+
+.widget-head {
+    font-size: 2vw;
+    position: absolute;
+    left: 0;
+    margin-top: 36px;
+}
+
+.widgets {
+    display: flex;
+    gap: 2px;
+    position: relative;
+    margin-top: 150px;
+    gap: 4%;
+}
+
+.w-1,
+.w-2,
+.w-3 {
+    position: relative;
+    height: 600px;
+    width: 300px;
+    background: transparent;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+    /* background-color: gray; */
+
+}
+
+.w-1-content,
+.w-2-content,
+.w-3-content {
+    width: calc(100% - 40px);
+    height: calc(75% - 20px);
+    background-color: gray;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.w-1-content {
+    background-image: url('../Images/Rectangle 38.png')
+}
+
+.w-2-content {
+    background-image: url('../Images/Rectangle\ 39.png');
+}
+
+.w-3-content {
+    background-image: url('../Images/Rectangle\ 40.png');
+}
+
+.w-header {
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-desc {
+    font-size: 16px;
+    text-align: left;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%)
+}
+
+.v-1,
+.v-2,
+.v-3 {
+    position: absolute;
+    bottom: 50px;
+
+}
+
+.v-1 button,
+.v-2 button,
+.v-3 button {
+    width: 200px;
+    height: 56px;
+    font-size: 1.1vw;
+    border-radius: 16px;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 10px 25px rgba(25, 145, 147, 0.15);
+    cursor: pointer;
+    color: rgba(37, 206, 209, 1);
+}
+
+
+/*---------------------For Business--------------------*/
+
+.business {
+    margin-top: 50px;
+    position: relative;
+    /* background-color: green; */
+}
+
+.b-header {
+    font-size: 35px;
+}
+
+.b-content {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.register-business {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.register-business .text {
+    text-align: left;
+}
+
+.register-btn button {
+    height: 56px;
+    width: 180px;
+    border-radius: 16px;
+    border: none;
+    color: white;
+    background-color: rgba(37, 206, 209, 1);
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 8px 24px rgba(37, 206, 209, 0.398);
+    cursor: pointer
+}
+
+
+/*-----------------Reviews------------------------*/
+
+
+.reviews {
+    position: relative;
+    margin-top: 80px;
+    height: auto;
+    /* background-color: red; */
+}
+
+.r-header {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.r-header:after {
+    content: " ";
+    height: 8px;
+    width: 10%;
+    display: block;
+    background-color: rgba(255, 210, 0, 1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.reviews-list {
+    display: flex;
+    overflow-x: scroll;
+    height: 400px;
+    width: 100%;
+    /* background-color: blue; */
+    gap: 4%;
+    align-items: center;
+    margin-top:50px;
+}
+
+.review-1,
+.review-2,
+.review-3,
+.review-4 {
+    width: calc(31% - 40px);
+    height: calc(100% - 40px);
+    background-color:rgba(229, 229, 229, 1);
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+
+}
+
+.your-review {
+    text-align: left;
+}
+
+
