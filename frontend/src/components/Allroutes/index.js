@@ -6,6 +6,8 @@ import SignUp from '../Registration/SignUp/SignUp'
 
 import Aboutus from "../Aboutus";
 import ContactUs from "../Contactus";
+import Counsellors from "../Counsellors/Counsellors"
+
 export default function Allroutes(){
     return(
        <Router>
@@ -16,6 +18,7 @@ export default function Allroutes(){
             <Route path="/login" element={<Login/>}/>
             <Route path="/about" element={<Aboutus/>}/>
             <Route path='/contactus' element={<ContactUs/>}/>
+            <Route path='/counsellors' element={<Counsellors/>}/>
         </Routes>
        </Router>
     )

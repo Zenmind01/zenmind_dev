@@ -31,6 +31,9 @@ function Navbar(){
     const contact = ()=>{
         navigate('/contactus')
     }
+    const counsellor = ()=>{
+        navigate('/counsellors')
+    }
     return(
         <>
         <div className="Navbar">
@@ -41,7 +44,7 @@ function Navbar(){
                 <div className="nav-options">
                     <div onClick={gohome} className="options" >Home </div>
                     <div onClick={gotoabout} className="options">About Us</div>
-                    <div onClick={setselected} className="options">Our Counselors</div>
+                    <div onClick={counsellor} className="options">Our Counselors</div>
                     <div onClick={contact} className="options">Contact Us </div>
                     <div className="auth1" onClick={gosignup}>Sign Up </div>
                     <div className="auth2" onClick={gologin}>Login</div>
