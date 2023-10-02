@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: center;
 }
 
+.counsel-banner{position:relative;}
 .counsellor-banner-img {
   width: 1213px;
   height: 466px;
@@ -13,7 +15,7 @@
 
 .counsellor-register {
   position: absolute;
-  bottom: 270px;
+  bottom: 500px;
   left: 275px;
   right: 711.16px;
   border-radius: 5px;
