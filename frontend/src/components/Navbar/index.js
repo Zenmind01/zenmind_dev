@@ -46,8 +46,11 @@ function Navbar(){
                     <div onClick={gotoabout} className="options">About Us</div>
                     <div onClick={counsellor} className="options">Our Counselors</div>
                     <div onClick={contact} className="options">Contact Us </div>
+                    <div className="options" onClick={()=>{window.location.href='https://chat.whatsapp.com/FJVOl5miUzYFcpOOJLwL1N'}} >Community</div>
+                    <div className="options" onClick={()=>{window.location.href='https://wa.me/8699427745'}}>Pricing</div>
                     <div className="auth1" onClick={gosignup}>Sign Up </div>
                     <div className="auth2" onClick={gologin}>Login</div>
+                    
                 </div>
             </div>
 
