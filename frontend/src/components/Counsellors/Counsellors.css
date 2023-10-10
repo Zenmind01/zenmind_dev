@@ -6,7 +6,9 @@
   align-items: center;
 }
 
-.counsel-banner{position:relative;}
+.counsel-banner {
+  position: relative;
+}
 .counsellor-banner-img {
   width: 1213px;
   height: 466px;
@@ -15,7 +17,8 @@
 
 .counsellor-register {
   position: absolute;
-  bottom: 500px;
+  /* bottom: 500px; */
+  top: 190px;
   left: 275px;
   right: 711.16px;
   border-radius: 5px;

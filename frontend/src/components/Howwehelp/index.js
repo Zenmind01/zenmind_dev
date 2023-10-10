@@ -1,7 +1,10 @@
 import React from "react";
 import index from "./index.css";
 import pc from "../Images/Layer_1-2.png";
+import profile from "../Images/profile.png";
 import quotes from "../Images/Group 5.png";
+import star from "../Images/star-mark.png";
+import tick from "../Images/tickmark.png";
 import {AiFillStar} from "react-icons/ai"
 
 function How() {
@@ -19,10 +22,11 @@ function How() {
                 Lorem ipsum dolor sit amet, consectetu adipiscing elit, labore
                 et dolore magna aliqua Ut enim ad.
               </div>
-            </div>
-            <div className="v-1">
+              <div className="v-1">
               <button>View All Counselors</button>
             </div>
+            </div>
+            
           </div>
 
           <div className="w-2">
@@ -32,10 +36,11 @@ function How() {
                 Lorem ipsum dolor sit amet, consectetu adipiscing elit, labore
                 et dolore magna aliqua Ut enim ad.
               </div>
-            </div>
-            <div className="v-2">
+              <div className="v-2">
               <button>View All Counselors</button>
             </div>
+            </div>
+            
           </div>
           <div className="w-3">
             <div className="w-3-content">
@@ -44,14 +49,111 @@ function How() {
                 Lorem ipsum dolor sit amet, consectetu adipiscing elit, labore
                 et dolore magna aliqua Ut enim ad.
               </div>
-            </div>
-            <div className="v-3">
+              <div className="v-3">
               <button>View All Counselors</button>
             </div>
+            </div>
+           
           </div>
         </div>
       </div>
+      <div className="mid-container">
+        <div className="mid-conatiner-content-1">
+          <h3>Need Help in Finding</h3>
+          <h1>THE RIGHT FIT?</h1>
+          <div className="mid-rect"></div>
+          <p className="mid-conatiner-content-1-p1">You don’t have to do it alone. Take our 
+          quick assessment so we can match you to the 
+          right therapist?</p>
+          <button className="match-btn">Get Matched</button>
+        </div>
+        <div className="mid-conatiner-content-2">
+          <div className="counselors-details">
+            
+              <div className="counselor-details-main">
+                <div className="detail-main-heading">
+                  <div className="counselor-profile-img">
+                    <img src={profile}></img>
+                  </div>
+                  <div className="counselor-edu">
+                    <h3>Ruhi Sharma</h3>
+                    <p>PHD, MSc. in Applies Psychology (RCI Licensed)</p>
+                    {/* <p>Psychology (RCI Licensed)</p> */}
+                  </div>
+                </div>
+                
 
+                <div className="counselor-slots">
+                  <div className="counselor-profile-img">
+                    <img src={star}></img>
+                  </div>
+                  <div className="counselor-specialisation-content">
+                    <h3>Specialization</h3>
+                    <p>Anxiety, Depression, Stress, Relationship Issues, Couple Counseling...  Show More</p>
+                  </div>
+                </div>
+
+                <div className="counselor-slots" >
+                  <div  className="counselor-tick">
+                    <img src={tick}></img>
+                  </div>
+
+                  <div  className="counselor-slot-content">
+                    <h3>Available Slots</h3>
+                    <p>Sep 8, 2023 11:00 PM</p>
+                  </div>
+                </div>
+
+                <div className="button-div">
+                  <button className="slot-button-1">View Profile</button>
+                  <button className="slot-button-2">Book Session</button>
+                </div>
+              </div>
+          </div>
+
+          <div className="counselors-details">
+              <div className="counselor-details-main">
+              <div className="detail-main-heading">
+                  <div className="counselor-profile-img">
+                    <img src={profile}></img>
+                  </div>
+                  <div className="counselor-edu">
+                    <h3>Ruhi Sharma</h3>
+                    <p>PHD, MSc. in Applies Psychology (RCI Licensed)</p>
+                    {/* <p>Psychology (RCI Licensed)</p> */}
+                  </div>
+                </div>
+
+                <div className="counselor-slots">
+                  <div className="counselor-profile-img">
+                    <img src={star}></img>
+                  </div>
+                  <div className="counselor-specialisation-content">
+                    <h3>Specialization</h3>
+                    <p>Anxiety, Depression, Stress, Relationship Issues, Couple Counseling...  Show More</p>
+                    
+                  </div>
+                </div>
+                <div className="counselor-slots" >
+                  <div  className="counselor-tick">
+                    <img src={tick}></img>
+                  </div>
+
+                  <div  className="counselor-slot-content">
+                    <h3>Available Slots</h3>
+                    <p>Sep 8, 2023 11:00 PM</p>
+                  </div>
+                </div>
+
+                <div className="button-div">
+                  <button className="slot-button-1">View Profile</button>
+                  <button className="slot-button-2">Book Session</button>
+                </div>
+                
+              </div>
+          </div>
+        </div>
+      </div>
       <div className="business">
         <div className="b-header">For Business</div>
         <div className="b-content">
