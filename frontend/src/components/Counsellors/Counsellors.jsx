@@ -34,7 +34,7 @@ const Counsellors = () => {
             src={banner}
             alt="Counsellor Banner"
           />
-          <div className="counsellor-register">
+          <div className="counsellor-register sticky-register">
             <div className="counsellor-heading">
               <h3>Counsellors</h3>
               <p>

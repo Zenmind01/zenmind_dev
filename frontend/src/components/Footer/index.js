@@ -4,6 +4,7 @@ import logo from "../Images/pink_zen 1.png";
 import ig from "../Images/iglogo.png";
 import linkedin from "../Images/linkedin.png";
 import twitter from "../Images/twitter.png";
+import connect from "../Images/connect.png";
 
 function Footer() {
   return (
@@ -31,6 +32,20 @@ function Footer() {
            <div>Terms Of Service</div>
            <div>Privacy Policy</div>
 
+          </div>
+
+          <div className="footer-content-rightmost">
+            <div className="rightmost-main">
+              <img src={connect}></img>
+              <p>Connect With Us</p>
+            </div>
+            <div className="righmost-para">
+              <div>We’d like to get your valuable feedback to</div>
+              <div>give you an even better experience.</div>
+            </div>
+            <button onClick={()=>{window.location.href='https://chat.whatsapp.com/FJVOl5miUzYFcpOOJLwL1N'}} className="rightmost-connect-button">
+              Connect
+            </button>
           </div>
         </div>
         <div style={{width:'100%',display:'flex',justifyContent:'center',marginTop:'80px',fontSize:'24px'}}>
