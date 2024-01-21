@@ -5,11 +5,15 @@ exports.register = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
 
+    if(!email && !password) {
+      throw new Error("Enter Valid Credential")
+    }
+
     const successRes = await UserServices.registerUser(name, email, password);
 
-    res.json({ status: true, message: successRes });
+    return res.json({ status: true, message: successRes });
   } catch (error) {
-    res.status(501).json({ status: false, message: error });
+    return res.status(501).json({ status: false, message: error.toString() });
   }
 };
 
@@ -25,12 +29,12 @@ exports.login = async (req, res, next) => {
     const user = await UserServices.getUserByEmail(email);
 
     if (!user) {
-      res.json({ status: true, message: "user does not exist" });
+      throw new Error( "user does not exist" );
     }
     
     const isPasswordCorrect = await user.comparePassword(password);
     if (isPasswordCorrect === false) {
-      res.json({ status: true, message: "password or username wrong" });
+      throw new  Error("password or username wrong");
     }
     // Creating Token
     let tokenData;
@@ -41,10 +45,10 @@ exports.login = async (req, res, next) => {
       "secret",
       "1h"
     );
-    res.status(200).json({ status: true, success: user, token: token });
+    return res.status(200).json({ status: true, success: user, token: token });
   } catch (error) {
-    console.log(error)
-    res.status(501).json({ status: false, message: error });
+    console.log(error.toString())
+    return res.status(501).json({ status: false, message: error.toString() });
   }
 };
 
